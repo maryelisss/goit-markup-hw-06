@@ -317,14 +317,16 @@
           </ul>
         </div>
         <form class="footer-form" action="#">
-            <label for="subscribe-input">Підпишіться на розсилку</label>
-            <input type="email" id="subscribe-input" placeholder="E-mai">
-            <button type="submit">
-            <span>Підписатися</span>
-            <svg class="" wigth="24" height="24">
+            <label class="footer-label" for="subscribe-input">Підпишіться на розсилку</label>
+            <div class="footer-mail-box">
+            <input class="footer-form-input" type="email" id="subscribe-input" placeholder="E-mail">
+            <button class="footer-form-button" type="submit">
+            <span class="footer-form-button-text">Підписатися</span>
+            <svg class="footer-form-button-icon" wigth="24" height="24">
              <use href="./images/icons.svg#icon-send"></use>
             </svg>
             </button>
+            </div>
         </form>
         </div>
           </footer>
@@ -364,6 +366,9 @@
     <div class="terms-box" >        
      <input class="checkbox-input visually-hidden" id="terms-checkbox" type="checkbox" name="terms-checkbox">
      <label class="checkbox-label" for="terms-checkbox">Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a></label>  
+      <svg class="checkbox-label-icon" wigth="16" height="15">
+         <use href="./images/icons.svg#icon-checkbox-checked"></use>
+      </svg>    
     </div> 
     <button type="submit" class="form-button"> Відправити </button>
 </form>
